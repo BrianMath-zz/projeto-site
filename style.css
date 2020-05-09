@@ -95,7 +95,11 @@ footer {
     right: 0%;
 }
 
-/* Página Python */
+footer a:visited {
+    color: #0000ee;
+}
+
+/* Página 2 */
 
 header img.pagina2 {
     height: 100px;
