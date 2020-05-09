@@ -22,10 +22,7 @@ main {
 }
 
 header h1 {
-    display: flex;
-    justify-content: center;
-
-    margin: 0 auto 40px;
+    margin: 0 0 10px;
 
     font-size: 2.5em;
 
@@ -36,22 +33,98 @@ header h1::selection {
     color: black;
 }
 
+header img {
+    height: 30px;
+}
+
 article h2 {
-    margin: 0;
+    margin: 40px 0 0;
 }
 
 article h2::selection {
     color: white;
 }
 
-article p {
-    margin: 8px 0 50px;
+article img.lado {
+    float: right;
 
-    text-align: justify;
+    height: 100px;
+}
+
+article img.lado::selection {
+    background-color: springgreen;
+}
+
+article p {
+    margin: 8px 0 15px;
 }
 
 article p::selection {
     color: white;
 
     background-color: springgreen;
+}
+
+article p.link {
+    margin: 0;
+}
+
+article p.link a {
+    text-decoration: none;
+    color: black;
+
+    border-radius: 8px;
+    box-shadow: -2px 2px 4px #0b152cbd;
+
+    background-color: steelblue;
+
+    padding: 5px;
+
+    transition: 0.4s;
+}
+
+article p.link a:hover {
+    color: white;
+}
+
+footer {
+    display: block;
+    
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+/* Página Python */
+
+header img.pagina2 {
+    height: 100px;
+}
+
+header.pagina2 {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+article.pagina2 {
+    text-align: center;
+}
+
+article.pagina2 h3 a {
+    text-decoration: none;
+
+    color: #ffd900;
+}
+
+article.pagina2 h3 a:hover {
+    text-decoration: underline;
+}
+
+div.video {
+    margin-top: 30px;
+}
+
+main > a img {
+    padding: 10px;
 }
